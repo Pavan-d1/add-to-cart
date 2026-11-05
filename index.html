@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js17</title>
+</head>
+<style>
+    #div1{
+        height: 344px;
+        width:576px;
+        margin-left: 2%;
+        margin-top: 2%;
+        background-color: #000000;
+        border-radius: 15px;
+        display: flex;
+        align-content: space-evenly;
+        padding:2%;
+        padding-left: 0%;
+        
+    }
+    #img1{
+        height:197px;
+        width: 238px;
+        border-radius: 17px;
+        padding: 8px;
+        margin-left: 0%;
+        margin-top: 0%;
+
+    }
+    #div1a{
+        display: flex;
+        flex-direction: column;
+
+        height: 341px;
+        width:255px;
+        margin-left: 5%;
+        margin-top: 0%;
+        background-color: rgb(64 64 64);
+        border-radius: 20px;
+        
+
+    
+        padding:0%;
+
+    }
+    #h2{
+        font-size: 33px;
+        color: aliceblue;
+        margin-left: 2px;
+        padding: 3px;
+        padding-top: 9px;
+        margin: 1px;
+        padding-left: 17px;
+
+    }
+    #p1{
+        font-size: 16px;
+        color: aliceblue;
+        margin-left: 2px;
+        padding: 0px;
+        padding-top: 5px;
+        margin: 0px;
+        padding-left: 11px;
+        
+        
+    }
+    #h3{
+        font-size: 24px;
+        color: aliceblue;
+        margin-left: 2px;
+        padding: 0px;
+        padding-top: 0px;
+        border: 0px;
+        margin: 0px;
+        padding-left: 11px;
+        margin 
+    }
+    
+    #span1{
+        text-decoration: line-through;
+        color:red;
+    }
+    #button{
+        height: 31px;
+        width: 84px;
+        border-radius: 5px;
+        padding-top: 1px;
+        background-color: aliceblue;
+        margin-top: -91px;
+        margin-left: 160px;
+
+    }
+    #button:hover{
+        height:34px;
+        width: 87px;
+        cursor: pointer;
+    }
+     #div2{
+        
+        width:576px;
+        margin-left: 2%;
+        margin-top: 2%;
+        background-color: #000000;
+        border-radius: 15px;
+        display: flex;
+        padding:2%;
+        padding-left: 0%;
+        flex-direction: column;
+        padding-top:1%;
+        margin-top: 4px;
+        display: none;
+        animation-name: dive;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+     }
+     @keyframes dive{
+        from { height: 0px; padding-top: 0%; margin-top: 0%;}
+        to { height: auto; padding-top: 1%; margin-top: 0%;}
+     }
+     #div2a{
+        height:40px;
+        width:550px;
+        margin-left: 3%;
+        margin-top: 2%;
+        background-color: rgb(64 64 64);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        padding:3%;
+        padding-left: 0%;
+        color:aliceblue;
+        display: none;
+        padding-bottom: 10px;
+
+        animation-name: item1;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+     }
+     @keyframes item1{
+        from { height: 0px; padding-top: 0%; padding-bottom: 0px; }
+        to   { height: 40px; padding-top: 3%; padding-bottom: 10px;}
+     }
+     #div2b{
+        height:40px;
+        width:550px;
+        margin-left: 3%;
+        margin-top: 2%;
+        background-color: rgb(64 64 64);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        padding:3%;
+        padding-left: 0%;
+        color:aliceblue;
+        display: none;
+
+        animation-name: item1;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+     }
+     #p2{
+        font-size:25px;
+        padding-left:14px;
+        margin: 0%;
+        animation-name: item1a;
+        opacity: 0;
+        animation-duration: 1.5s ;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        
+     }
+     @keyframes item1a{
+        from { opacity: 0;}
+        to { opacity: 1;}
+     }
+     
+    #span2{
+        margin-left:212px;
+        
+    }
+    #p3{
+        font-size:0px;
+        margin-left:332px;
+        color:aliceblue;
+        display: none; 
+        margin-bottom: 0px;
+        margin-top: 0px;
+        animation: item3;
+        animation-duration: 1s;
+        animation-delay: 0.4s;
+        animation-fill-mode: forwards;
+
+     }
+     @keyframes item3{
+        from {font-size:  0px; margin-top: 0px;}
+        to { font-size: 30px; margin-top: 45px;}
+     }
+     #cart{
+        display: none;
+        animation-name: cart1;
+        animation-duration: 1s;
+     }
+     @keyframes cart1{
+        from{ font-size: 0px;}
+        to { font-size: 34px;}
+     }
+
+</style>
+<body>
+    <div id="div1">
+        <div id="div1a">
+            <img src="lap1.jpeg" id="img1">
+            <h2 id="h2"> Dell</h2>
+            <p id="p1" ><span id="span1"> $2500</span>  <span style="color:rgb(183, 248, 183); font-size: px;">20% off</span> </p>
+            <h3 id="h3"> $2000/-</h3>
+             <button id=button class="button1" onclick="func1()">Add to cart</button>
+        </div>
+         <div id="div1a">
+            <img src="lap2.jpeg" id="img1">
+            <h2 id="h2"> hp</h2>
+            <p id="p1" ><span id="span1"> $3200</span>  <span style="color:rgb(183, 248, 183); font-size: px;">10% off</span> </p>
+            <h3 id="h3"> $2880/-</h3>
+             <button id=button class="button2" onclick="func2()">Add to cart</button>
+        </div>
+    </div>
+    <p id="cart" style=" font-size: 34px; margin-left: 5px; padding:2px; font-weight:600; margin: 0%; padding-left: 52px; margin-top: 24px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Cart:</p>
+
+    <div id="div2">
+        <div id="div2b">
+            <p id="p2" class="item2"> Laptop: "hp" <span id="span2" style="margin-left: 230px;" class="item2_q"> Qty: 1_  $2000</span></p>
+        </div>
+        <div id="div2a">
+            <p id="p2" class="item1"> Laptop: "Dell" <span id="span2" class="item1_q"> Qty: 1_  $2000</span></p>
+        </div>
+        <p id="p3">Grand total: $10000</p>
+
+    </div>
+    <script>
+        let a=0;
+        let b=0;
+        let c=document.querySelector('#div2a');
+        let d=document.querySelector('#div2b');
+        let e=0;
+        let f=0;
+        let g=0;
+        function func1(){
+            a+=2000
+            b++
+            g+=2000
+            c.style.display="block"
+            document.querySelector('#p3').style.display="block"
+            document.querySelector('.item1_q').innerHTML="Qty: "+b+"_ $"+a;
+            document.querySelector('#p3').innerHTML="Grand total: $"+g;
+            document.querySelector("#div2").style.display="block"
+            document.querySelector("#cart").style.display="block"
+
+        }
+         function func2(){
+            e+=2880
+            f++
+            g+=2880
+            d.style.display="block"
+            document.querySelector('#p3').style.display="block"
+            document.querySelector('.item2_q').innerHTML="Qty: "+f+"_ $"+e;
+            document.querySelector('#p3').innerHTML="Grand total: $"+g;
+            document.querySelector("#div2").style.display="block"
+            document.querySelector("#cart").style.display="block"
+            
+        }
+        
+    </script>
+
+    
+</body>
+</html>
